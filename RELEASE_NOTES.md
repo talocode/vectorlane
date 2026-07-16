@@ -115,9 +115,8 @@ None — this is the initial release.
 - **npm:** https://www.npmjs.com/package/@talocode/vectorlane
 - **PyPI:** https://pypi.org/project/talocode-vectorlane/
 - **GitHub:** https://github.com/talocode/vectorlane
-- **Docs:** https://vectorlane.dev/docs
-- **Discord:** https://discord.gg/vectorlane
+- **Docs:** https://github.com/talocode/vectorlane/tree/main/docs
 
 ### Feedback
 
-We welcome your feedback! Please report issues on [GitHub](https://github.com/talocode/vectorlane/issues) or join our [Discord](https://discord.gg/vectorlane).
+We welcome your feedback! Please report issues on [GitHub](https://github.com/talocode/vectorlane/issues).

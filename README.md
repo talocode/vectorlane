@@ -441,4 +441,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 - Documentation: [docs/](docs/)
 - Issues: [GitHub Issues](https://github.com/talocode/vectorlane/issues)
-- Discord: [Join our Discord](https://discord.gg/vectorlane)
+- npm: [@talocode/vectorlane](https://www.npmjs.com/package/@talocode/vectorlane)
