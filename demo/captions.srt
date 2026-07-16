@@ -1,0 +1,74 @@
+1
+00:00:00,500 --> 00:00:02,800
+Searchable local memory for AI agents
+
+2
+00:00:00,800 --> 00:00:02,800
+VectorLane v0.1.0
+
+3
+00:00:03,300 --> 00:00:06,800
+$ vectorlane init
+
+4
+00:00:04,200 --> 00:00:06,800
+Storage initialized at ~/.vectorlane
+
+5
+00:00:07,300 --> 00:00:12,800
+$ vectorlane ingest demo/docs --collection talocode
+
+6
+00:00:08,800 --> 00:00:12,800
+Ingested 3 documents 43 chunks
+
+7
+00:00:13,300 --> 00:00:16,800
+Embeddings: local-hash 256 dimensions
+
+8
+00:00:14,000 --> 00:00:16,800
+Offline. No API key required.
+
+9
+00:00:17,300 --> 00:00:22,800
+$ vectorlane search "How does GateLane control tools?" --citations
+
+10
+00:00:23,300 --> 00:00:30,800
+Results
+
+11
+00:00:24,000 --> 00:00:30,800
+1. GateLane uses a tool-policy registry to control agent tool access
+score: 0.94   cite: docs/gatelane.md L42
+
+12
+00:00:25,200 --> 00:00:30,800
+2. Tool access is gated by a permission check at runtime
+score: 0.87   cite: src/gate.ts L18
+
+13
+00:00:26,400 --> 00:00:30,800
+3. Each agent declares tools in lane.json at startup
+score: 0.79   cite: config/lane.json L7
+
+14
+00:00:31,200 --> 00:00:34,800
+Integrations
+
+15
+00:00:31,600 --> 00:00:34,800
+MemoryLane import  |  ContextLane import
+
+16
+00:00:32,400 --> 00:00:34,800
+$ vectorlane import-memorylane ./export.json
+
+17
+00:00:35,300 --> 00:00:37,800
+VectorLane - open-source local vector memory engine
+
+18
+00:00:35,800 --> 00:00:37,800
+npm install -g @talocode/vectorlane

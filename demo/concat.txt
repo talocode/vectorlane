@@ -1,0 +1,8 @@
+file 'seg1_title.mp4'
+file 'seg2_init.mp4'
+file 'seg3_ingest.mp4'
+file 'seg4_embeddings.mp4'
+file 'seg5_search.mp4'
+file 'seg6_results.mp4'
+file 'seg7_integrations.mp4'
+file 'seg8_end.mp4'

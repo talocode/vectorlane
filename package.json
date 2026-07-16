@@ -1,0 +1,70 @@
+{
+  "name": "@talocode/vectorlane",
+  "version": "0.1.0",
+  "description": "Open-source local vector memory engine for AI agents — ingest documents, chunk content, generate embeddings, search locally, return metadata/citations.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "vectorlane": "./bin/vectorlane.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "bin",
+    "docs",
+    "examples",
+    "demo",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test --import tsx test/*.test.ts",
+    "dev": "node --import tsx src/cli.ts",
+    "start": "node dist/cli.js",
+    "mcp": "node dist/cli.js mcp",
+    "demo": "node dist/cli.js demo",
+    "doctor": "node dist/cli.js doctor",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "ai-agents",
+    "vector-search",
+    "embeddings",
+    "rag",
+    "local-first",
+    "memory",
+    "mcp",
+    "developer-tools",
+    "talocode",
+    "cli",
+    "sdk",
+    "semantic-search",
+    "context-engineering"
+  ],
+  "author": "Talocode",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talocode/vectorlane"
+  },
+  "bugs": {
+    "url": "https://github.com/talocode/vectorlane/issues"
+  },
+  "homepage": "https://github.com/talocode/vectorlane#readme",
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "tsx": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}
