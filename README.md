@@ -8,6 +8,12 @@
 
 VectorLane is a local vector memory store designed for AI agents. It provides fast, offline-capable semantic search over text, documents, and data using embeddings. No cloud APIs required — everything runs on your machine.
 
+## Architecture
+
+![VectorLane Architecture](demo/architecture.png)
+
+Documents, MemoryLane exports, and ContextLane exports flow into the Ingest pipeline. Content is chunked, embedded, and stored in the local vector store. Search returns ranked results with citations via CLI, HTTP API, or MCP server.
+
 ## Features
 
 - **Fully local** — No external API calls, no data leaves your machine
